@@ -22,6 +22,10 @@ npm i presql
 -join()
  ### Depricated/Not Featured 
 - In,Between,Alias,Distinct,OrderByGroup -- Adding in Future Versions
+# Use By
+
+`const { PreSqlClient } = require("./");\
+const presql = new PreSqlClient({})`
 ## License
 
 MIT
