@@ -1,0 +1,30 @@
+{
+  "name": "presql",
+  "version": "1.0.1",
+  "description": "This is a npm package contain predefined query statement written, no need to write whole query statement, just use like mongoDB",
+  "main": "index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsc ./index.ts",
+    "start": "tsc ./index.ts && node app.js"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mullayam/PreSQL.git"
+  },
+  "author": "ENJOYS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mullayam/PreSQL/issues"
+  },
+  "homepage": "https://github.com/Mullayam/PreSQL#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mysql2": "^3.2.0"
+  }
+}
