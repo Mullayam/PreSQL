@@ -26,7 +26,7 @@ npm i presql
 
  create a file like `index.js`  use that code give below, to initiate DB Connection
 ``` js
-const { PreSqlClient } = require("./");
+const { PreSqlClient } = require("presql");
 const presql = new PreSqlClient({
   pre_user: "root",
   pre_password: "",
