@@ -1,30 +1,41 @@
 # PreSQL
-## _No More Query Statement_
+> Developer : `Mullayam`<br>
+> Version : `1.0.0`
 
-PreSQL is a SQL-language based library contains pre-written code with shorten methods.Say Bye to write to more query statement.
-## Tech
-PreSQL uses a mysql2 of open source projects to work properly:
-- [mysql2] -To Connect MySQL Database!
+## _No More Query Statements_
+
+PreSQL is an SQL-language based library containing pre-written code with shortend methods. Say "bye" to writing long query statements.
+
+## Dependencies
+
+PreSQL requires the following dependencies to be installed:
+
+-   [Node.js](https://nodejs.org/) v16+
+-   mysql2 - _to connect to MySQL database_
+
 ## Installation
-PreSQL requires [Node.js](https://nodejs.org/) v16+ to run.
+
 Install the dependencies and devDependencies and start the server.
 ```sh
 npm i presql
 ```
- ## METHODS
+## Methods
+
 ### Crud Operations
+
 - create() , createMany() 
 - updateOne() , updateMany()
 - destroy() , destroyAll()
+
 ### Logical (Math) Operations
--Math()
+- Math()
 ### Table Join / Relationship
--join()
+- join()
  ### Depricated/Not Featured 
 - In,Between,Alias,Distinct,OrderByGroup -- Adding in Future Versions
-# Use By
+# Examples
 
- create a file like `index.js`  use that code give below, to initiate DB Connection
+ create a file `index.js`  use that code give below, to initiate DB Connection
 ``` js
 const { PreSqlClient } = require("presql");
 const presql = new PreSqlClient({
@@ -80,7 +91,7 @@ async function test() {
       firstName: "Rachna",
       lastName: "Singh",
     },
-    ]  //data is required parameter only single object
+    ]  //data is required parameter, only single object
   });
   // if table and column uses any special character, please pass name in cammelCase e.g first_name to firstName
    console.log(getData)
@@ -185,27 +196,5 @@ async function test() {
 test();
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## License
-
-MIT
+This project is licensed under `MIT` License, please check the LICENSE file for more details.
