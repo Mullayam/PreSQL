@@ -7,20 +7,17 @@
 PreSQL is an SQL-language based library containing pre-written code with shortend methods. Say "bye" to writing long query statements.
 
 ## Dependencies
-
 PreSQL requires the following dependencies to be installed:
 
 -   [Node.js](https://nodejs.org/) v16+
 -   mysql2 - _to connect to MySQL database_
 
 ## Installation
-
 Install the dependencies and devDependencies and start the server.
 ```sh
 npm i presql
 ```
 ## Methods
-
 ### Crud Operations
 
 - create() , createMany() 
