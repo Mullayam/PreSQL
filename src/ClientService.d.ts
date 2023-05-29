@@ -1,0 +1,42 @@
+import { ConnectionOptions, DatabaseEntityValues, MathFunctions, Relationship } from "./interface/config";
+import { ClientServiceType } from "./interface/Client";
+import { DatabaseTables } from "./interface/tables";
+export declare class ClientService implements ClientServiceType {
+    protected connectionOptions: ConnectionOptions;
+    private TableName;
+    private xfilter;
+    protected connection: any;
+    private showConnErrors?;
+    private tableJoiner;
+    constructor(con: ConnectionOptions);
+    table(tableName: DatabaseTables): this;
+    private createTableDeclation;
+    private CreateDatabaseConfigurationJsonData;
+    private invokeConnection;
+    private OrderBy;
+    private GroupBy;
+    private SortBy;
+    private InsertStatement;
+    private SelectStatement;
+    private AddQueryStatement;
+    private BindValues;
+    private FixTableColumns;
+    private WhereQuery;
+    private UpdateQueryParameters;
+    private PrepareMathFuncStatement;
+    create(values: DatabaseEntityValues): Promise<any>;
+    createMany(values: DatabaseEntityValues): Promise<any>;
+    updateOne(values: Omit<DatabaseEntityValues, "sortBy" | "select">): Promise<any>;
+    updateMany(values: Omit<DatabaseEntityValues, "sortBy" | "select">): Promise<any>;
+    destroy(values: DatabaseEntityValues): Promise<any>;
+    destroyAll(values?: object): Promise<any>;
+    findById(values: Omit<DatabaseEntityValues, "data">): Promise<any>;
+    findOne(values: Omit<DatabaseEntityValues, "data">): Promise<any>;
+    findMany(values: Omit<DatabaseEntityValues, "data">): Promise<any>;
+    findFirst(values: Omit<DatabaseEntityValues, "data">): Promise<any>;
+    filter(): this;
+    exist(values: Omit<DatabaseEntityValues, "data">, results?: Boolean): Promise<any>;
+    Math(values: MathFunctions): Promise<any>;
+    join(values: Relationship): Promise<any>;
+}
+//# sourceMappingURL=ClientService.d.ts.map

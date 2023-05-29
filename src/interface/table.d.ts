@@ -1,0 +1,2 @@
+export type DatabaseTables = "admins" | "configures" | "contents" | "content_details" | "content_media" | "currencies" | "currency_sells" | "email_templates" | "failed_jobs" | "jobs" | "languages" | "migrations" | "notify_templates" | "password_resets" | "payout_logs" | "payout_methods" | "referrals" | "referral_bonuses" | "site_notifications" | "sms_controls" | "subscribers" | "templates" | "template_media" | "testimonials" | "tickets" | "ticket_attachments" | "ticket_messages" | "transactions" | "users";
+//# sourceMappingURL=table.d.ts.map
