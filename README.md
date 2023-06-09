@@ -10,7 +10,7 @@
     <img src="https://assets-docs.b-cdn.net/assets/lightMAdebyEnjoys.png" height="30">
   </a>
   <a aria-label="NPM version" href="https://www.npmjs.com/package/presql">
-    <img alt="1.2.2" src="https://img.shields.io/badge/NPM-1.2.2-orange?style=for-the-badge&logo=appveyor">
+    <img alt="1.2.2" src="https://img.shields.io/badge/NPM-1.2.3-orange?style=for-the-badge&logo=appveyor">
   </a>
  
 </p>
